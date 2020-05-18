@@ -2,8 +2,8 @@ importance: 5
 
 ---
 
-# Create a date
+# Criar um objeto date
 
-Create a `Date` object for the date: Feb 20, 2012, 3:12am. The time zone is local.
+Crie um objeto `Date` para a data: Fevereiro 20, 2012, 3:12am. Com hora local.
 
-Show it using `alert`.
+Mostre-a usando `alert`.
