@@ -9,7 +9,7 @@ Escreva uma função `formatDate(date)` que deve seguir o formato `date` a segui
 - Se desde `date` passou menos de um segundo, então retorne `"right now"`.
 - Caso contrário, se desde `date`passou menos de 1 minuto, então retorne `"n sec. ago"`.
 - Caso contrário, se passou menos de uma hora, então retorne `"m min. ago"`.
-- Caso contrário, a data inteira no formato `"DD.MM.YY HH:mm"`. Ou seja: `"day.month.year hours:minutes"`, todos em formato de 2 digitos, por exemplo `31.12.16 10:00`.
+- Caso contrário, a data inteira no formato `"DD.MM.YY HH:mm"`. Ou seja: `"day.month.year hours:minutes"`, todos em formato de 2 dígitos, por exemplo, `31.12.16 10:00`.
 
 Por exemplo:
 
