@@ -4,37 +4,37 @@ Vamos conhecer o nosso novo objeto global: [Date](mdn:js/Date). Ele armazena a d
 
 Por exemplo, nós podemos usá-lo para armazenar modificações de horário, para medir o tempo ou apenas mostrar a data atual.
 
-## Creation
+## Criação
 
-To create a new `Date` object call `new Date()` with one of the following arguments:
+Para criar um novo objeto `Date`, chamamos `new Date()` com um dos seguintes argumentos:
 
 `new Date()`
-: Without arguments -- create a `Date` object for the current date and time:
+: Sem argumentos -- cria um objeto `Date` para a data e hora atual:
 
     ```js run
     let now = new Date();
-    alert( now ); // shows current date/time
+    alert( now ); // mostra a hora/data atual
     ```
 
 `new Date(milliseconds)`
-: Create a `Date` object with the time equal to number of milliseconds (1/1000 of a second) passed after the Jan 1st of 1970 UTC+0.
+: Cria um objeto `Date` com a hora igual ao número de milissegundos (1/1000 de um segundo) passados após 1º Jan 1970 UTC+0.
 
     ```js run
-    // 0 means 01.01.1970 UTC+0
+    // 0 significa 01.01.1970 UTC+0
     let Jan01_1970 = new Date(0);
     alert( Jan01_1970 );
 
-    // now add 24 hours, get 02.01.1970 UTC+0
+    // agora adicionamos 24 horas, e obtemos 02.01.1970 UTC+0
     let Jan02_1970 = new Date(24 * 3600 * 1000);
     alert( Jan02_1970 );
     ```
 
-    The number of milliseconds that has passed since the beginning of 1970 is called a *timestamp*.
+    O número de milissegundos que passaram desde o início de 1970 é chamado de *timestamp*.
 
-    It's a lightweight numeric representation of a date. We can always create a date from a timestamp using `new Date(timestamp)` and convert the existing `Date` object to a timestamp using the `date.getTime()` method (see below).
+    É uma forma simples de representar uma data. Podemos sempre criar uma data de uma timestamp usando `new Date(timestamp)` e converter o objeto `Date` já existente para uma timestamp usando o método `date.getTime()` (veja mais abaixo).
 
 `new Date(datestring)`
-: If there is a single argument, and it's a string, then it is parsed with the `Date.parse` algorithm (see below).
+: Se houver um único argumento, e for uma string, ele é então analisado através do algoritmo `Date.parse`(veja abaixo).
 
 
     ```js run
