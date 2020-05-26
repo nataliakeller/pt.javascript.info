@@ -1,8 +1,8 @@
-# Date and time
+# Date e time
 
-Let's meet a new built-in object: [Date](mdn:js/Date). It stores the date, time and provides methods for date/time management.
+Vamos conhecer o nosso novo objeto global: [Date](mdn:js/Date). Ele armazena a data, hora e providencia métodos úteis para tratamento das mesmas. 
 
-For instance, we can use it to store creation/modification times, to measure time, or just to print out the current date.
+Por exemplo, nós podemos usá-lo para armazenar modificações de horário, para medir o tempo ou apenas mostrar a data atual.
 
 ## Creation
 
